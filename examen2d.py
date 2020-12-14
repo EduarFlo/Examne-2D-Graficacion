@@ -29,7 +29,7 @@ Dy = -15
 
 xp = [Ax, Bx, Cx, Dx, Ax]
 yp = [Ay, By,  Cy, Dy, Ay]
-plt.plot(xp, yp, color='b')
+plt.plot(xp, yp, color='0.3')
 
 # Dibujamos el segundo rectangulo
 Ax = 0
@@ -43,7 +43,7 @@ Dy = -7.5
 
 xp = [Ax, Bx, Cx, Dx, Ax]
 yp = [Ay, By,  Cy, Dy, Ay]
-plt.plot(xp, yp, color='b')
+plt.plot(xp, yp, color='0.5')
 
 
 
@@ -65,11 +65,12 @@ ylast = yc+r*np.sin(p1)
 for p in np.arange(p1, p2+dp, dp):
     x = xc+r*np.cos(p)
     y = yc+r*np.sin(p)
-    plt.plot([xlast, x], [ylast, y], color='g', linewidth=1)
+    #Utilizamos 0.7l col
+    plt.plot([xlast, x], [ylast, y], color='0.7', linewidth=1)
     xlast = x
     ylast = y
 
-plt.scatter(xc, yc, s=2, color='g')
+plt.scatter(xc, yc, s=2, color='0.7')
 
 
 
